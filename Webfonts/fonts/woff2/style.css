@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "iransans";
+  src: url(fonts/IRANSansX-Black.woff2), url(fonts/IRANSansX-Bold.woff2),
+    url(fonts/IRANSansX-DemiBold.woff2), url(fonts/IRANSansX-ExtraBlack.woff2),
+    url(fonts/IRANSansX-ExtraBold.woff2), url(fonts/IRANSansX-Heavy.woff2),
+    url(fonts/IRANSansX-Light.woff2), url(fonts/IRANSansX-Medium.woff2),
+    url(fonts/IRANSansX-Regular.woff2), url(fonts/IRANSansX-Thin.woff2),
+    url(fonts/IRANSansX-UltraLight.woff2);
+}
+body {
+  font-family: "iransans", sans-serif;
+}
