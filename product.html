@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-pro-6.5.0-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" />
+      <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body onscroll="move()">
+   <!-- move top button start -->
+   <div class="movetop hide fixed-bottom">
+    <p class="fw-bolder d-lg-block d-none">بازگشت به ابتدای صفحه</p>
+    <i class="fa fa-arrow-alt-circle-up p-3 d-lg-none d-block text-light"></i>
+  </div>
+  <header id="header">
+    <div id="header_banner" class="d-flex">
+      <p class="cursor typewriter-animation">
+        حراج های بی نظیر
+        <span><i class="fa-solid fa-star header_banner_icon"></i></span
+        ><span id="banner-focus">4 فصل</span
+        ><span><i class="fa-solid fa-star header_banner_icon"></i></span>
+        فرصتی طلایی برای خرید
+      </p>
+    </div>
+    
+    <div class="d-flex ms-lg-5 me-lg-5">
+      <div class="navbar navbar-expand-lg offcanvest-btn d-lg-none ms-1 col-2">
+        <div class="container-fluid">
+            <!-- offcanvest button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- offcanvest headre -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="pic/new-logo.png" class="col-5 m-auto" alt="logo">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <!-- offcanvest body -->
+              <div class="offcanvas-body d-lg-none">
+                <ul class="navbar-nav justify-content-start  flex-grow-1 pe-3">
+                  <!-- dropdown menu -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bolder " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      دسته بندی محصولات
+                    </a>
+                    <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">موبایل</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/samsung-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">samsung</span></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/apple-black-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">iphone</span></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/xiaomi-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5 brand-name">xiaomi</span></a></li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item  m-auto" href="#"
+                            >دوربین</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><img
+                              src="PIC/canon-seeklogo.svg"
+                              alt=""
+                              class="brand-logo" /><span class="fw-bolder m-5 brand-name">
+                              Canon</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><img
+                              src="PIC/sony-seeklogo.svg"
+                              alt=""
+                              class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                              >Sony</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><img
+                              src="PIC/cdnlogo.com_nikon.svg"
+                              alt=""
+                              class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                              >Nikon</span
+                            ></a
+                          >
+                        </li>
+                      </ul> 
+                      <ul> 
+                          <li><a class="dropdown-item " href="#">لپ تاپ</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/asus-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">asus</span></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/apple-black-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">macbook</span></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="PIC/hp-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">hp</span></a></li>
+                      </ul>
+                  </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-bolder ms-4 " aria-current="page" href="index.html">صفحه اصلی</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link fw-bolder ms-4" href="#contact-us">ارتباط با ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bolder ms-4" href="#about-us">درباره ما</a>
+                  </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- logo -->
+      <div id="logo" class="col-lg-1 mt-lg-4 m-auto ms-lg-0">
+        <img src="pic/new-logo.png" alt="logo" class="ps-2" />
+      </div>
+      <!-- search box -->
+      <div
+        id="search_box"
+        class="col-lg-8 mt-lg-3 d-lg-flex d-md-none d-none">
+        <form
+          action=""
+          class="form-control d-flex flex-row col-lg-6 border-0">
+          <input
+            type="search"
+            placeholder="جستجو در اسمارت شاپ..."
+            class="col-lg-8 border-0" />
+          <button id="search-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <!-- login and sign up -->
+      <div id="login-signup" class="col-lg-2 mt-lg-4 ms-md-5 ms-sm-5 d-flex">
+        <div
+          class="col-lg-7 ms-lg-3 me-3 mt-2 d-flex border-end border-2"
+          id="login_signup">
+          <button id="login" class="d-flex me-2 fw-bolder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="fa-solid fa-right-to-bracket mt-2 ms-1 me-2 me-lg-0" id="login-desktop-icon"></i>
+            <span class="ms-3 mt-1 me-2 d-lg-flex d-none" id="login-desktop-span">ورود | ثبت نام</span>
+          </button>
+        </div>
+        <div id="cart-icon-header" class="me-2 me-lg-0 d-flex">
+          <button onclick="show_sabad_kharid()" class="ms-lg-5 border-0 mt-2 mt-lg-1 bg-transparent">
+            <i class="fa-regular fa-cart-shopping"></i>
+          </button>
+          <div id="bought-products-counter-box" class="d_none"><p id="bought-products-counter">0</p></div>
+        </div>
+      </div>
+    </div>
+    <div id="sabad-kharib-box" class="d_none">
+      <div id="head" class="col-12 d-flex pt-1">
+        <div class="d-flex col-11" id="header-part">
+          <div class="fw-bolder ms-2 mt-2"><p>تعداد کالای سبد : </p></div>
+        <div class="ms-2 mt-2 fw-bolder">
+          <p class=" text-secondary fw-bolder" id="tedad">0</p>
+        </div>
+        <div class="ms-3 mt-2 fw-bolder text-secondary"><p>کالا</p></div>
+        <a href="" class="text-decoration-none mt-2 ms-5 fw-bolder">مشاهده صفحه سبد خرید</a>
+      </div>
+        <button onclick="close_sabad_kharid()" class="border-0 sabad-close bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="body" class="col-12">
+      </div>
+      <div id="footer" class="d-flex justify-content-between col-12">
+        <p class="mt-2 ms-2">قیمت: <span id="total_price">0</span><span class="span_toman"><img src="pic/toman.svg" class="toman-edit" alt=""></span></p>
+        <button class="btn btn-danger me-2" id="sabt-sefaresh"><p class="">ثبت سفارش</p></button>
+      </div>
+    </div>
+    <div
+        id="search_box"
+        class="col-12 mt-1 d-lg-none d-block">
+        <form
+          action=""
+          class="form-control d-flex flex-row col-12 border-0">
+          <input
+            type="search"
+            placeholder="جستجو در اسمارت شاپ..."
+            class="col-11 border-0" />
+          <button id="search-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="h6  fw-bold mt-2 ">ورود و ثبت نام</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body login-main">
+                <input class="modal-input" type="checkbox" id="login-checkbox" aria-hidden="true" />
+                <div class="signup">
+                  <form id="signupForm">
+                    <label class="modal-lable" for="login-checkbox" aria-hidden="true">ثبت نام| ورود </label>
+                    <input class="modal-input" id="user-name" type="text" name="txt" placeholder="نام کاربری" required="" />
+                    <input class="modal-input"
+                      type="text"
+                      name="Email"
+                      id="signupEmail"
+                      placeholder="ادرس ایمیل"
+                      required="" />
+                    <input class="modal-input"
+                      type="password"
+                      name="Password"
+                      id="signuppassword"
+                      placeholder="کلمه عبور"
+                      required="" />
+                      <input class="modal-input"
+                      type="password"
+                      name="Password"
+                      id="signup-repassword"
+                      placeholder="تکرار کلمه عبور"
+                      required="" />
+                      <p id="signup-error-message" class="d_none bg-light text-danger" >لطفا یک ایمیل معتبر وارد کنید (gmail.com، yahoo.com یا outlook.com).</p>                      
+                      <button type="submit" id="signup-button" class="modal-button">ثبت نام</button>
+                  </form>
+                </div>
+                <div class="login-modal">
+                  <form id="login-form">
+                    <label class="modal-lable" for="login-checkbox">ورود به حساب کاربری</label>
+                    <input class="modal-input"
+                      type="text"
+                      name="Email"
+                      id="loginEmail"
+                      placeholder="نام کاربری " />
+                    <input class="modal-input" id="login-password" type="password" name="Password" placeholder="کلمه عبور" />
+                    <p id="login-error-message" class="d_none bg-light text-danger" >لطفا یک ایمیل معتبر وارد کنید (gmail.com، yahoo.com یا outlook.com).</p> 
+                    <button class="modal-button">ورود به حساب کاربری</button>
+                  </form>
+                </div>
+            </body>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- nav start -->
+  <nav class="nav navbar-expand ms-5 me-5 d-lg-flex d-md-none d-none">
+    <div class="col-lg-12 d-flex list-unstyled mt-4" id="nav-menu">
+      <li class="nav-item dropdown">
+        <a
+          id="down-icon"
+          class="nav-link fw-bolder nav-item-color text-black"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          دسته بندی محصولات
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="border-2 border-end mt-2">
+            <li>
+              <a class="dropdown-item justify-content-center" href="#"
+                >موبایل</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/samsung-logo-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >samsung</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/apple-black-logo-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >iphone</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/xiaomi-logo-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >xiaomi</span
+                ></a
+              >
+            </li>
+          </ul>
+          <ul class="border-2 border-end ms-2 mt-2">
+            <li>
+              <a class="dropdown-item justify-content-center" href="#"
+                >دوربین</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/canon-seeklogo.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name">
+                  Canon</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/sony-seeklogo.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >Sony</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/cdnlogo.com_nikon.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >Nikon</span
+                ></a
+              >
+            </li>
+          </ul>
+          <ul class="ms-2 mt-2">
+            <li><a class="dropdown-item" href="#">لپ تاپ</a></li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/asus-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >asus</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/apple-black-logo-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >macbook</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="PIC/hp-svgrepo-com.svg"
+                  alt=""
+                  class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                  >hp</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active fw-bolder ms-5 nav-item-color"
+          aria-current="page"
+          href="index.html"
+          >صفحه اصلی</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder ms-5 nav-item-color" href="#contact-us"
+          >ارتباط با ما</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder ms-5 nav-item-color" href="#about-us"
+          >درباره ما</a
+        >
+      </li>
+    </div>
+  </nav>
+    <section class="container-fluid d-flex flex-wrap  col-lg-12  ">
+        <div class="col-12 col-lg-4 magnify">
+          <div
+            class="magnifier"
+            style="background-image: url(PIC/s24-5g-ultra.png)"></div>
+          <div class="show-product-image-p-page magnified">
+            <img src="PIC/s24-5g-ultra.png" alt="" class="col-12 product-image-p-page" id="img-show">
+          </div>
+           <div class="d-flex justify-content-around mt-lg-5">
+            <div class=" small-image-box"><img class="images" src="PIC/s24-5g-ultra.png" alt=""></div>
+            <div class=" small-image-box"><img class="images" src="pic/New folder/99adf3ff60680944eb80d1201791af5af6f64a67_1705751970.webp" alt=""></div>
+            <div class=" small-image-box"><img class="images" src="pic/New folder/bab3397fb599c050f24b9fa7277b708f0ccd6f42_1727516157.webp" alt=""></div>
+            <div class=" small-image-box"><img class="images" src="pic/New folder/cac5338408efad4d09ce2c1df8e85b8845ff84f2_1705751970.webp" alt=""></div>
+            <div class=" small-image-box"><img class="images" src="pic/New folder/df8fc9a87cfc58d9eee35c6b6a1c4f4e0bf89b17_1727515386.webp" alt=""></div>
+           </div>
+        </div>
+        <div class="col-lg-7 ms-lg-3 d-flex flex-wrap">
+           <div class="col-lg-12 mt-5 ">
+               <img src="PIC/samsung-logo-svgrepo-com.svg" alt="" class="brand-logo">
+               <span class="ms-lg-3 h4  model-name fw-bolder ">گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام</span>
+               <p class="text-secondary mt-3 mt-lg-1  fw-ligh ">Samsung Galaxy S24 Ultra Dual SIM 256GB And 12GB RAM Mobile Phone - Vietnam</p>
+                   <p class="">امتیاز کاربران از 5 نمره<span class="ms-2"><i class="fa-solid fa-star star-ic"></i></span><span class="ms-2">4.4</span></p>
+                   <p><i class="fa-regular fa-thumbs-up text-success h5"></i>&nbsp;85%کاربران این محصول را پیشنهاد کردند</p>
+           </div>
+           <div class="d-flex flex-wrap col-lg-9">
+               <div class="col-lg-11">
+                   <p class=" fw-bolder h4">رنگ بندی : <span id="colorname"></span></p>
+                   <div class="d-flex col-lg-9">
+                       <div class="col-lg-2 mt-lg-3">
+                         <div class="color-part yellow-color"></div>
+                         <!-- <p class="mt-2 fw-bolder h6 ">زرد</p> -->
+                       </div>
+                       <div class="col-lg-2 ms-5">
+                         <div class="color-part black-color"></div>
+                         <!-- <p class="mt-2 fw-bolder h6 ">مشکی</p> -->
+                       </div>
+                       <div class="col-lg-2 ms-5">
+                         <div class="color-part gray-color"></div>
+                         <!-- <p class="mt-2 fw-bolder h6 ">خاکستری</p> -->
+                       </div>
+                       <div class="col-lg-2 ms-5">
+                         <div class="color-part purple-color"></div>
+                         <!-- <p class="mt-2 fw-bolder h6 ">بنفش</p> -->
+                       </div>
+                   </div>
+                   <p class="mt-5 mt-lg-2  fw-bolder h4">بیمه</p>
+                   <div class="d-flex col-10 justify-content-between col-md-8 col-lg-8 col-xl-6  bime">
+                       <div class="bime-checkbox col-1  ">
+                           <input type="checkbox">
+                       </div>
+                       <div class="d-flex flex-wrap ms-4 col-7 ">
+                           <div class="col-12 "><p class="h5 fw-bold mt-3 ms-3">بیمه تجهیزات دیجیتال</p></div>
+                           <div class="col-12">
+                               <p class="h5 fw-bold mt-4 ms-3">
+                                   ۴۱۸,۵۶۰ تومان
+                               </p>
+                           </div>
+                       </div>
+                       <div class="col-3 mt-5 ">
+                           <a href="" class=" mt-2 fw-bolder text-decoration-none ms-lg-0 ms-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                               جزییات...
+                           </a>
+                       </div>
+                       <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-scrollable">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <p class="h6  fw-bold mt-2 ">بیمه تجهیزات دیجیتال</p>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                                 <p class="fw-bolder h5">بیمه تک شاپ بخش زیادی از خسارات حوادث زیر را جبران می‌کند:</p>
+                                 <p>جبران ۸۰ درصدی خسارات انواع سرقت</p>
+                                 <p>جبران ۱۰۰ درصدی انواع صدمات فیزیکی مانند ضربه دیدگی، شکستگی و آب‌خوردگی غیرعمدی</p>
+                                 <p>جبران ۱۰۰ درصدی آتش‌سوزی و انفجار‌های غیرعمدی</p>
+                                 <p>جبران ۱۰۰ درصدی سوختگی یا نیم‌سوز شدن، القای الکتریکی، اتصال کوتاه و نوسانات ولتاژ غیرعمدی</p>
+                                 <p>همچنین تمام فرایند‌های بیمه تک شاپ از خرید تا دریافت خسارت آنلاین است.</p>
+                                 <p>هزینه‌های دستگاه صدمه دیده حتی گوشی‌های آیفون در کمتر از ۴۸ ساعت بعد از اعلام خسارت پرداخت می‌شود.</p>
+                                 <p>تعمیرات توسط متخصصین دیجی‌کالا سرویس انجام می‌شود و هر تعمیر ۳ ماه و هر قطعه تعمیرشده ۶ ماه گارانتی دارد.</p>
+                                 <p>برای رفع مشکلات و سوالات خود می‌توانید در هفت روز هفته با ما بگیرید</p>
+                               </div>
+                               <div class="modal-footer">
+                                 <button type="button" class="btn btn-success  ms-0  col-6 ">افزودن کالا و بیمه به سبد خرید</button>
+                                 <button type="button" class="btn btn-danger  col-5 ms-4 " data-bs-dismiss="modal">فعلا تمایل ندارم</button>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <p class=" mt-2 fw-bolder ms-3  h4">ویژگی‌ها</p>
+                       <div class="d-flex flex-wrap mt-4 ">
+                           <div class="bg-body-secondary  mt-4 mt-lg-1  ms-1 prod-deatail">
+                               <p class="fw-light h6 ms-4 mt-2 ">فناوری صفحه‌ نمایش</p>
+                               <p class="fw-bolder  ms-4 ">Dynamic LTPO AMOLED</p>
+                           </div>
+                           <div class="bg-body-secondary mt-4 mt-lg-1   ms-3  prod-deatail">
+                               <p class="fw-light h6 ms-4 mt-2">رزولوشن عکس</p>
+                               <p class="fw-bolder  ms-4 ">200 مگاپیکسل</p>
+                           </div>
+                           <div class="bg-body-secondary mt-4 mt-lg-1  ms-3  prod-deatail">
+                               <p class="fw-light h6 ms-4 mt-2">نسخه سیستم عامل</p>
+                               <p class="fw-bolder ms-4 ">Android 14</p>
+                           </div>
+                           <div class="bg-body-secondary mt-5 mt-lg-1  ms-1  prod-deatail">
+                               <p class="fw-light h6 ms-4 mt-2">اندازه صفحه نمایش</p>
+                               <p class="fw-bolder  ms-4 ">6.8</p>
+                           </div>
+                           <div class="bg-body-secondary mt-5 mt-lg-1  ms-3  prod-deatail">
+                               <p class="fw-light h6 ms-4 mt-2">اقلام همراه</p>
+                               <p class="fw-bolder  ms-4 ">دفترچه راهنما</p>
+                           </div>
+                       </div>  
+                   </div>
+               </div>
+               <div class="col-lg-3">
+                   <div class="col-lg-12" id="sabad-kharid-desktop">
+                       <p class="ms-3 mt-3 h5">
+                         ۲۵,۵۴۹,۰۰۰تومان
+                       </p>
+                       <hr>
+                       <p class="ms-3 mt-4 h4"><i class="fa-solid product-page-icon fa-square-check"></i>&nbsp;&nbsp;<span class="h6">گارانتی طلایی تک شاپ</span></p>
+                       <p class="ms-3 mt-5 h4"><i class="fa-solid product-page-icon fa-truck-fast">&nbsp;&nbsp;<span class="h6 text-black">ارسال سریع تا 24 ساعت کاری برای تهران</span></i></p>
+                       <p class="ms-3 mt-4 h4"><i class="fa-solid product-page-icon fa-truck">&nbsp;&nbsp;</i><span class="h6">ارسال مرسوله حداکثر تا 72 ساعت کاری به سراسر کشور</span></p>
+                       <button class="btn cart-box ms-2 btn-danger  mt-4 mb-4   col-11">افزودن به سبد خرید</button>
+                     </div>
+                     <div class="d-flex fixed-bottom bg-body-tertiary justify-content-between" id="sabad-kharid-mobile">
+                       <p class="ms-3 mt-4 mb-4 h3">
+                         ۲۵,۵۴۹,۰۰۰  تومان
+                       </p>
+                       <button class="btn btn-danger cart-box me-2  mt-4 mb-4  col-4">افزودن به سبد خرید</button>
+                     </div>
+               </div>   
+           </div>
+        </div>
+   </section>
+   <section class="mb-3 mt-4 border-top border-bottom-0">
+    <div class="border-bottom">
+      <article class="ms-4 mt-2 prod-article"><h3>معرفی</h3></article>
+      <div id="moarefi" class="col-lg-11 col-12 text-content">
+        <p class="mt-3 ms-4 me-5">همواره گوشی‌های هوشمند پرچمدار سامسونگ توانسته‌اند با بهره بردن از مشخصات فنی قدرتمند، توجه هر بیننده‌ای را به خود جلب کنند و همواره رقیبان سرسختی برای برند‌های دیگر فعال در این عرصه بودند و این بار نوبت به قدرت‌نمایی سامسونگ Galaxy S24 Ultra رسیده است. پرچمداری تا دندان مسلح که خط و نشان جدی برای رقیبان کشیده است. سامسونگ در زمینه طراحی تغییرات چشم‌گیری برای این گوشی در نظر نگرفته است و تنها خبری از خمیدگی صفحه‌نمایش در قسمت کناری نیست و این با را صفحه‌نمایش تخت و جذاب رو‌به‌رو هستیم. صفحه‌نمایش 6.8 اینچی این گوشی با رزولوشن 1440×3120 که توانایی نمایش 505 پیکسل در هر اینچ را دارد، وضوح تصویر دقیق، جذاب و چشم‌نوازی را در اختیارتان قرار می‌دهد. نرخ بروزرسانی 120 هرتز هم سبب شده تا نه‌تنها در فعالیت‌های روزمره، بلکه برای مثال در اجرای بازی‌های سنگین و تماشای ویدیو‌های باکیفیت، عملکرد بسیار روان و بدون لگ را شاهد باشید. یک سنسور دوربین اصلی با رزولوشن 200 مگاپیکسل در کنار سنسور 12 مگاپیسل پریسکوپ با قابلیت زوم 5 برابری اپتیکال (زوم بدون کم شدن کیفیت) به همراه سنسور 10 مگاپیکسل تله‌فوتو با قابلیت زوم 3 برابری اپتیکال و سنسور 12 مگاپیکسل فوق‌عریض یا همان اولترا واید برای قسمت پشتی سامسونگ Galaxy S24 Ultra در نظر گرفته شده است. در بخش عکاسی خیالتان راحت باشد، چون با گوشی پرچمداری رو‌به‌رو هستید که بدون شک حتی نیاز‌های یک عکاس حرفه‌ای را هم بر‌آورده می‌کند. برای دوربین سلفی هم سنسور با رزولوشن 12 مگاپیکسل در نظر گرفته شده است. اما بدون شک اصلی‌ترین تغییر این گوشی به نسبت نسل قبلی، حضور پردازنده اسنپدراگون 8 نسل 3 شرکت کوالکام است. پردازنده‌ای که تاثیر مستقیم در تک‌تک عملکرد‌های بخش‌های مختلف این گوشی دارد. از نظر اجرای بازی‌های سنگین هم خیالتان کاملا راحت باشد که عملکردی روان، با‌کیفیت و بدون لگ را شاهد خواهید بود. باتری با میزان ظرفیت 5000 میلی‌آمپرساعت در کنار پشتیبانی از فناوری شارژ سریع 45 وات، از دیگر مشخصات در نظر گرفته شده هستند. در مجموع باید بگوییم که اگر به دنبال یک پرچمدار با اصالت هستید که نیاز‌های شما را به‌خوبی در حد و اندازه یک پرچمدار بر‌آورده کند، سامسونگ Galaxy S24 Ultra می‌تواند گزینه بسیار مناسبی برای شما باشد.
+        </p>
+      </div>
+      <div id="toggleBtn"class="ms-4 mt-2 toggleBtn mb-3"><p>نمایش بیشتر ></p></div>
+    </div>
+    <div class="border-bottom">
+      <article class="ms-4 mt-2 prod-article"><h5>بررسی تخصصی</h5></article>
+      <div id="barresi" class="col-lg-11 col-12 text-content">
+        <div>
+          <p class="mt-3 ms-4 me-5">گوشی موبایل Samsung Galaxy S24 Ultra یکی از گوشی‌های پرچمدار و قدرتمند سامسونگ است که با امکانات و قابلیت‌های بسیار با کیفیت، برای استفاده روزمره و همچنین عملکردهای حرفه‌ای مانند عکاسی و بازی طراحی شده است. با ظرفیت 256 گیگابایت حافظه داخلی و رم 12 گیگابایت، این گوشی قدرتمند و کارآمد، برای اجرای برنامه‌ها و بازی‌های سنگین مناسب است. همچنین، این گوشی دارای دو سیم کارت است که امکان استفاده همزمان از دو شماره در یک گوشی را فراهم می‌کند. گفتنی‌ست که همراه این گوشی یک شارژر سامسونگ وجود دارد. در این مطلب، قصد داریم به بررسی جزئیات طراحی و ساخت، نمایشگر، دوربین، عملکرد سخت افزاری، باتری و دیگر بخش‌های این گوشی بپردازیم.
+          </p>
+          <div>
+            <div class="border-bottom">
+              <article class="ms-4 mt-2"><h4>طراحی و صفحه نمایش</h4></article>
+              <div class="d-lg-none d-block mt-3 mb-3"><img src="pic/samsuns24ultra.jpg" alt=""></div>
+              <p class="ms-4 me-5 d-flex">
+                گوشی Samsung Galaxy S24 Ultra با طراحی شیک و زیبا، از جنس مواد با کیفیت ساخته شده است. بدنه این گوشی از جنس تیتانیوم ساخته شده است که به آن ظاهری لوکس و مقاوم می‌بخشد. طراحی نمایشگر این گوشی همچنین بسیار شگفت انگیز است. با صفحه نمایش Dynamic LTPO AMOLED 2X 6.8 اینچی و رزولوشن بالا، تماشای ویدئوها و عکس‌ها در این گوشی بسیار لذت‌بخش است. همچنین، این گوشی دارای حسگر اثر انگشت زیر نمایشگر است که راحتی و امنیت در استفاده را بهبود می‌بخشد. در کل، طراحی و ساخت گوشی Samsung Galaxy S24 Ultra بسیار حرفه‌ای و جذاب است و قطعاً توجه هر کاربری را جلب خواهد کرد. گوشی Samsung Galaxy S24 Ultra دارای صفحه نمایش 6.8 اینچی Dynamic LTPO AMOLED 2X با رزولوشن بالا است. تصاویر و متن‌ها با جزئیات بالا و رنگ‌های زنده و واقعی در این صفحه نمایش به نمایش در می‌آیند. همچنین، صفحه نمایش این گوشی دارای نسبت تصویر ۱۹.۵:9 است که به تماشای ویدئوها و بازی‌ها در حالت تمام صفحه کمک می‌کند. صفحه نمایش Samsung Galaxy S24 Ultra همچنین از نرخ نوسازی 120 هرتزی بهره می‌برد که منجر به تجربه‌ای بسیار شفاف و روان می‌شود. همچنین، این گوشی دارای حسگر اثر انگشت زیر صفحه نمایش است که عملکرد سریع و دقیقی در شناسایی اثر انگشت دارد. در کل، صفحه نمایش گوشی Samsung Galaxy S24 Ultra با کیفیت بالا و قابلیت‌های برجسته، از جمله نرخ نوسازی بالا و حسگر اثر انگشت زیر نمایشگر، تجربه‌ی بصری بی‌نظیری را برای کاربران به ارمغان می‌آورد.
+                <span class="product-design-img d-lg-block d-none"><img src="pic/samsuns24ultra.jpg" alt=""></span>
+              </p>
+            </div>
+            <div class="border-bottom">
+              <article class="ms-4 me-5 mt-2"><h4>دوربین و سخت افزار</h4></article>
+              <div class="d-lg-none d-block mt-3 mb-3"><img src="pic/samsung-s24-ultra2.jpg" alt=""></div>
+              <p class="ms-4 me-5 d-flex">
+                گوشی Samsung Galaxy S24 Ultra دارای سیستم دوربین پیشرفته‌ای است که به شما این امکان را می‌دهد تا عکس‌ها و ویدئوهای با کیفیت بالا بگیرید. این گوشی دارای چهار دوربین پشتی است که شامل یک دوربین اصلی ۲۰۰ مگاپیکسلی، یک دوربین پریسکوپ تله‌فوتو ۵۰ مگاپیکسلی با زوم اپتیکال ۵ برابری، یک دوربین تله‌فوتو ۱۰ مگاپیکسلی با فوکوس اتوماتیک و لرزشگیر اپتیکال تصویر و یک دوربین التراواید ۱۲ مگاپیکسلی است. با استفاده از این سیستم دوربین، می‌توانید تصاویر با جزئیات بالا و رنگ‌های زنده و واقعی بگیرید. همچنین، این گوشی قابلیت ضبط ویدئوهای با رزولوشن 8K را نیز داراست که تجربه‌ی فوق‌العاده‌ای برای علاقه‌مندان به فیلمبرداری فراهم می‌کند. علاوه بر این، گوشی Samsung Galaxy S24 Ultra دارای دوربین سلفی ۱۲ مگاپیکسلی از نوع واید است که عکس‌های شفاف و زیبا را به شما ارائه می‌دهد. در کل، سیستم دوربین قدرتمند گوشی Samsung Galaxy S24 Ultra برای عکاسی حرفه‌ای و فیلمبرداری با کیفیت بالا بسیار مناسب است. گوشی Samsung Galaxy S24 Ultra با سخت افزار قدرتمندی همراه است که اجرای برنامه‌ها و بازی‌های سنگین را بسیار راحت و سریع می‌کند. این گوشی از پردازنده Qualcomm Snapdragon 8 Gen 3 با هشت هسته پردازشی و حداکثر فرکانس ۳.۳۹ گیگاهرتز استفاده می‌کند. همچنین سامسونگ در کنار این سخت‌افزار از ۱۲ گیگابایت رم استفاده کرده است که عملکرد سریع و بدون لگ را تضمین می‌کند. همچنین، گرافیک قدرتمند Adreno 750 در این گوشی می‌تواند تجربه‌ی بازی را به یک سطح جدید ببرد. همچنین، گوشی Samsung Galaxy S24 Ultra دارای حافظه داخلی بسیار بزرگی است که به شما امکان ذخیره‌سازی بیشترین حجم اطلاعات را می‌دهد. با حافظه داخلی 256 گیگابایت، شما می‌توانید تعداد زیادی عکس، ویدئو و فایل دیگر را در گوشی خود ذخیره کنید بدون اینکه نگران اتمام حافظه شوید.  
+                <span class="product-design-img d-lg-block d-none"><img src="pic/samsung-s24-ultra2.jpg" alt=""></span>
+              </p>
+              <p class="mt-2 ms-4 me-5">
+                در مورد اتصالات و قابلیت‌های دیگر گوشی Samsung Galaxy S24 Ultra، باید به وجود پورت USB-C و سیستم عامل Android 14 اشاره کنیم. همچنین، این گوشی دارای اسکنر اثر انگشت در صفحه نمایش است که به شما امکان می‌دهد به سرعت و به صورت امن به گوشی خود دسترسی داشته باشید. به طور کلی، عملکرد سخت افزاری قدرتمند گوشی Samsung Galaxy S24 Ultra، از جمله ویژگی‌های برتر این گوشی است که آن را به یک انتخاب عالی برای کاربران حرفه‌ای و علاقمندان به بازی‌های سنگین تبدیل می‌کند. این عملکرد سخت افزاری قدرتمند با باتری قدرتمندی نیز همراه است. با ظرفیت باتری 5000 میلی‌آمپرساعت، این گوشی به شما امکان استفاده طولانی مدت را می‌دهد. همچنین، این گوشی دارای قابلیت شارژ سریع ۴۵ وات و شارژ بی‌سیم 15 وات است که به شما این امکان را می‌دهد تا باتری گوشی را به سرعت و به صورت بی‌سیم شارژ کنید. علاوه بر این، گوشی Samsung Galaxy S24 Ultra دارای قابلیت شارژ معکوس نیز هست که به شما این امکان را می‌دهد تا باتری دیگر دستگاه‌ها را از طریق گوشی شارژ کنید. در کل، باتری قدرتمند و قابلیت‌های شارژ سریع و بی‌سیم گوشی Samsung Galaxy S24 Ultra، از جمله ویژگی‌های برجسته‌ای است که این گوشی را از سایر رقبا متمایز می‌کند.
+              </p>
+            </div>
+            <div>
+              <article class="ms-4 me-5 mt-2"><h4>سخن نهایی</h4></article>
+              <p class="ms-4 me-5">در نهایت، گوشی Samsung Galaxy S24 Ultra یک گوشی پرچمدار بسیار قدرتمند و کارآمد است که با امکانات و ویژگی‌های برتر، برای استفاده روزمره و عملکردهای حرفه‌ای طراحی شده است. با طراحی زیبا و مقاوم، نمایشگر با کیفیت و سیستم دوربین پیشرفته، عملکرد سخت افزاری قدرتمند و باتری قدرتمند، این گوشی تجربه‌ای بی‌نظیر را برای کاربران به ارمغان می‌آورد. به طور کلی، گوشی Samsung Galaxy S24 Ultra مناسب برای افرادی است که به دنبال یک گوشی قدرتمند و با عملکرد برتر هستند و به دنبال تجربه‌ی بهتری در عکاسی، بازی و استفاده روزمره خود هستند.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="toggleBtn2"class="toggleBtn ms-4 mt-2 mb-3"><p>نمایش بیشتر ></p></div>
+    </div>
+   </section>
+    <!-- footer start -->
+    <footer class="text-black bg-body-secondary mt-5 border border-top pt-5">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start ">
+          <div class="col-12 justify-content-around mb-3 d-flex flex-wrap">
+            <div class="text-center mb-3" >
+              <div><img src="pic/support.svg" alt=""></div>
+              <div><p>پشتیبانی 24 ساعته</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/original-products.svg" alt=""></div>
+              <div><p>ضمانت اصالت کالا</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/express-delivery.svg" alt=""></div>
+              <div><p>امکان تحویل سریع</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/days-return.svg" alt=""></div>
+              <div><p>هفت روز ضمانت بازگشت کالا</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/cash-on-delivery.svg" alt=""></div>
+              <div><p>پرداخت در محل</p></div>
+            </div>
+          </div>
+          <hr>
+          <div class="col-md-3 col-lg-3 mx-auto mt-2 ">
+            <img src="pic/new-logo.png" class="mb-4 " id="about-us"></img>
+            <p class="fw-bolder"> انلاین شاپ تخصصی موبایل و لپ تاپ با مجموعه گسترده‌ای از برندهای معتبر. تجربه خرید ساده و راحت، پشتیبانی حرفه‌ای و خدمات پس از فروش قوی. اطمینان کامل از خرید آنلاین.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 mx-auto mt-3 ">
+            <h5 class="fw-bolder text-danger mb-4 ">خدمات مشتریان</h5>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">سوالات متداول</a></p>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">اخبار و مقالات</a></p>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">قوانین و مقررات</a></p>
+          </div>
+          <div class="col-md-3 col-lg-2 mx-auto mt-3">
+            <h5 class="fw-bolder text-danger mb-4  ">میانبر های سایت</h5>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="index.html">صفحه اصلی</a></p>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="samsung-mobile.html">موبایل</a></p>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="#">لپ تاپ</a></p>
+          </div>
+          <div class="col-md-3 col-lg-3 mx-auto mt-3 " id="contact-us">
+            <h5 class="fw-bolder text-danger mb-4  ">ارتباط با ما</h5>
+              <p>
+                <i class="fa-solid fa-house footer_icon"></i><span class="ms-2 text-nowrap">تهران ,خیابان پیروزی,پاساژ پاناروما</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope me-2  footer_icon"></i>
+                <span>Mdderfan@gmail.com</span>
+              </p>
+              <p class="fw-bolder">
+                <i class="fa-solid fa-phone me-3 footer_icon"></i>
+                989050217601+
+              </p>
+              <p class="fw-bolder">
+                <i class="fa-solid fa-print me-3  footer_icon"></i>
+                983365901009+
+              </p>
+          </div>
+        </div>
+        <hr class="mb-5 ">
+        <div class="row align-items-center footer-cp mb-lg-0 mb-5" >
+          <div class="col-md-7 col-lg-8 ">
+            <p class="fw-bolder">
+              Copyright ©2024 All Rights Reserved by:
+            <a href="#" class="text-decoration-none ">
+              <strong class="text-danger ">ErfanMd</strong>
+            </a></p>
+          </div>
+          <div class="col-md-5 col-lg-4 footer-cp mb-lg-0 mb-5">
+            <div class="text-center text-md-start ">
+              <ul class="list-unstyled list-inline ">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!-- footer end -->
+   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./script.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1VDDWMRSTH");
+    </script>
+    <script>
+      try {
+        fetch(
+          new Request(
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            { method: "HEAD", mode: "no-cors" }
+          )
+        )
+          .then(function (response) {
+            return true;
+          })
+          .catch(function (e) {
+            var carbonScript = document.createElement("script");
+            carbonScript.src =
+              "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+            carbonScript.id = "_carbonads_js";
+            document.getElementById("carbon-block").appendChild(carbonScript);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    </script>
+   <script>
+    // move top 
+    document.querySelectorAll(".movetop")[0].addEventListener("click", mtop);
+      function move(){
+        if (window.pageYOffset >= 100) {
+        document.querySelectorAll(".movetop")[0].classList.remove("hide");
+          document.querySelectorAll(".movetop")[0].classList.add("show");
+        } else {
+          document.querySelectorAll(".movetop")[0].classList.remove("show");
+          document.querySelectorAll(".movetop")[0].classList.add("hide");
+        }
+      }
+        function mtop() {
+        window.scrollTo(0, 0);
+      }
+    let images = document.querySelectorAll(".images");
+      for (let i = 0; i < images.length; i++) {
+        document
+          .querySelectorAll(".images")
+          [i].addEventListener("click", function () {
+            console.log("hi");
+            console.log(images[i].src);
+            document
+              .querySelector("#img-show")
+              .classList.remove("fade-in"); /* remove fade-in class */
+            document
+              .querySelector("#img-show")
+              .classList.add("fade-out"); /* add fade-out class */
+            setTimeout(function () {
+              document.querySelector("#img-show").src = images[i].src;
+              document.querySelector("#img-show").classList.remove("fade-out");
+              document
+                .querySelector("#img-show")
+                .classList.add("fade-in"); /* add fade-in class */
+              document.querySelector(".magnifier").style.backgroundImage = `url(${document.querySelector("#img-show").src}`
+            }, 700); /* wait for 2 seconds */
+          });
+      }
+      $(".magnified").hover(function(e){
+  //Store position & dimension information of image
+  var imgPosition = $(".magnify").position(),
+      imgHeight = $(".magnified").height(),
+      imgWidth = $(".magnified").width();
+  
+  //Show mangifier on hover
+  $(".magnifier").show();
+  
+  //While the mouse is moving and over the image move the magnifier and magnified image
+  $(this).mousemove(function(e){
+    //Store position of mouse as it moves and calculate its position in percent
+    var posX = e.pageX - imgPosition.left,
+        posY = e.pageY - imgPosition.top,
+        percX = (posX / imgWidth) * 100,
+        percY = (posY / imgHeight) * 100,
+        perc = percX + "% " + percY + "%";
+    
+    //Change CSS of magnifier, move it to mouse location and change background position based on the percentages stored.
+    $(".magnifier").css({
+      top:posY,
+      left:posX,
+      backgroundPosition: perc
+    });
+  });
+}, function(){
+  //Hide the magnifier when mouse is no longer hovering over image.
+  $(".magnifier").hide();
+});
+      document.querySelector(".yellow-color").addEventListener("click", function(){
+        document.querySelector("#colorname").innerHTML = "زرد"
+      })
+      document.querySelector(".black-color").addEventListener("click", function(){
+        document.querySelector("#colorname").innerHTML = "مشکی"
+      })
+      document.querySelector(".gray-color").addEventListener("click", function(){
+        document.querySelector("#colorname").innerHTML = "خاکستری"
+      })
+      document.querySelector(".purple-color").addEventListener("click", function(){
+        document.querySelector("#colorname").innerHTML = "بنفش"
+      })
+   </script>
+   <script>
+    document.getElementById('toggleBtn').addEventListener('click', function() 
+    { const textElement = document.getElementById('moarefi'); 
+    const button = document.getElementById('toggleBtn'); 
+    textElement.classList.toggle('expanded'); 
+    if (textElement.classList.contains('expanded')) 
+    { button.textContent = 'بستن'; } 
+    else { button.textContent = 'نمایش بیشتر>'; } });
+
+    document.getElementById('toggleBtn2').addEventListener('click', function() 
+    { const textElement = document.getElementById('barresi'); 
+    const button = document.getElementById('toggleBtn2'); 
+    textElement.classList.toggle('expanded'); 
+    if (textElement.classList.contains('expanded')) 
+    { button.textContent = 'بستن'; } 
+    else { button.textContent = 'نمایش بیشتر>'; } });
+   </script>
+</body>
+</html>

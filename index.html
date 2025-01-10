@@ -1,0 +1,3833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-pro-6.5.0-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" />
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <title>صفحه اصلی</title>
+  </head>
+  <body onscroll="move()">
+    <!-- move top button start -->
+    <div class="movetop hide fixed-bottom">
+      <p class="fw-bolder d-lg-block d-none">بازگشت به ابتدای صفحه</p>
+      <i class="fa fa-arrow-alt-circle-up p-3 d-lg-none d-block text-light"></i>
+    </div>
+    <!-- header start -->
+    <header id="header">
+      <div id="header_banner" class="d-flex">
+        <p class="cursor typewriter-animation">
+          حراج های بی نظیر
+          <span><i class="fa-solid fa-star header_banner_icon"></i></span
+          ><span id="banner-focus">4 فصل</span
+          ><span><i class="fa-solid fa-star header_banner_icon"></i></span>
+          فرصتی طلایی برای خرید
+        </p>
+      </div>
+      
+      <div class="d-flex ms-lg-5 me-lg-5">
+        <div class="navbar navbar-expand-lg offcanvest-btn d-lg-none ms-1 col-2">
+          <div class="container-fluid">
+              <!-- offcanvest button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- offcanvest headre -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="pic/new-logo.png" class="col-5 m-auto" alt="logo">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <!-- offcanvest body -->
+                <div class="offcanvas-body d-lg-none">
+                  <ul class="navbar-nav justify-content-start  flex-grow-1 pe-3">
+                    <!-- dropdown menu -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle fw-bolder " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        دسته بندی محصولات
+                      </a>
+                      <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                        <ul>
+                            <li><a class="dropdown-item" href="#">موبایل</a></li>
+                            <li><a class="dropdown-item" href="products-list.html"><img src="PIC/samsung-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">samsung</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="PIC/apple-black-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">iphone</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="PIC/xiaomi-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5 brand-name">xiaomi</span></a></li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item  m-auto" href="#"
+                              >دوربین</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><img
+                                src="PIC/canon-seeklogo.svg"
+                                alt=""
+                                class="brand-logo" /><span class="fw-bolder m-5 brand-name">
+                                Canon</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><img
+                                src="PIC/sony-seeklogo.svg"
+                                alt=""
+                                class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                                >Sony</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><img
+                                src="PIC/cdnlogo.com_nikon.svg"
+                                alt=""
+                                class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                                >Nikon</span
+                              ></a
+                            >
+                          </li>
+                        </ul> 
+                        <ul> 
+                            <li><a class="dropdown-item " href="#">لپ تاپ</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="PIC/asus-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">asus</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="PIC/apple-black-logo-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">macbook</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="PIC/hp-svgrepo-com.svg" alt="" class="brand-logo"><span class="fw-bolder m-5  brand-name">hp</span></a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active fw-bolder ms-4 " aria-current="page" href="index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link fw-bolder ms-4" href="#contact-us">ارتباط با ما</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder ms-4" href="#about-us">درباره ما</a>
+                    </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- logo -->
+        <div id="logo" class="col-lg-1 mt-lg-4 m-auto ms-lg-0">
+          <img src="pic/new-logo.png" alt="logo" class="ps-2" />
+        </div>
+        <!-- search box -->
+        <div
+          id="search_box"
+          class="col-lg-8 mt-lg-3 d-lg-flex d-md-none d-none">
+          <form
+            action=""
+            class="form-control d-flex flex-row col-lg-6 border-0">
+            <input
+              type="search"
+              placeholder="جستجو در اسمارت شاپ..."
+              class="col-lg-8 border-0" />
+            <button id="search-button" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- login and sign up -->
+        <div id="login-signup" class="col-lg-2 mt-lg-4 ms-md-5 ms-sm-5 d-flex">
+          <div
+            class="col-lg-7 ms-lg-3 me-3 mt-2 d-flex border-end border-2"
+            id="login_signup">
+            <button id="login" class="d-flex me-2 fw-bolder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-right-to-bracket mt-2 ms-1 me-2 me-lg-0" id="login-desktop-icon"></i>
+              <span class="ms-3 mt-1 me-2 d-lg-flex d-none" id="login-desktop-span">ورود | ثبت نام</span>
+            </button>
+          </div>
+          <div id="cart-icon-header" class="me-2 me-lg-0 d-flex">
+            <button onclick="show_sabad_kharid()" class="ms-lg-5 border-0 mt-2 mt-lg-1 bg-transparent">
+              <i class="fa-regular fa-cart-shopping"></i>
+            </button>
+            <div id="bought-products-counter-box" class="d_none"><p id="bought-products-counter">0</p></div>
+          </div>
+        </div>
+      </div>
+      <div id="sabad-kharib-box" class="d_none">
+        <div id="head" class="col-12 d-flex pt-1">
+          <div class="d-flex col-11" id="header-part">
+            <div class="fw-bolder ms-2 mt-2"><p>تعداد کالای سبد : </p></div>
+          <div class="ms-2 mt-2 fw-bolder">
+            <p class=" text-secondary fw-bolder" id="tedad">0</p>
+          </div>
+          <div class="ms-3 mt-2 fw-bolder text-secondary"><p>کالا</p></div>
+          <a href="" class="text-decoration-none mt-2 ms-5 fw-bolder">مشاهده صفحه سبد خرید</a>
+        </div>
+          <button onclick="close_sabad_kharid()" class="border-0 sabad-close bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="body" class="col-12">
+        </div>
+        <div id="footer" class="d-flex justify-content-between col-12">
+          <p class="mt-2 ms-2">قیمت: <span id="total_price">0</span><span class="span_toman"><img src="pic/toman.svg" class="toman-edit" alt=""></span></p>
+          <button class="btn btn-danger me-2" id="sabt-sefaresh"><p class="">ثبت سفارش</p></button>
+        </div>
+      </div>
+      <div
+          id="search_box"
+          class="col-12 mt-1 d-lg-none d-block">
+          <form
+            action=""
+            class="form-control d-flex flex-row col-12 border-0">
+            <input
+              type="search"
+              placeholder="جستجو در اسمارت شاپ..."
+              class="col-11 border-0" />
+            <button id="search-button" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="h6  fw-bold mt-2 ">ورود و ثبت نام</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body login-main">
+                  <input class="modal-input" type="checkbox" id="login-checkbox" aria-hidden="true" />
+                  <div class="signup">
+                    <form id="signupForm">
+                      <label class="modal-lable" for="login-checkbox" aria-hidden="true">ثبت نام| ورود </label>
+                      <input class="modal-input" id="user-name" type="text" name="txt" placeholder="نام کاربری" required="" />
+                      <input class="modal-input"
+                        type="text"
+                        name="Email"
+                        id="signupEmail"
+                        placeholder="ادرس ایمیل"
+                        required="" />
+                      <input class="modal-input"
+                        type="password"
+                        name="Password"
+                        id="signuppassword"
+                        placeholder="کلمه عبور"
+                        required="" />
+                        <input class="modal-input"
+                        type="password"
+                        name="Password"
+                        id="signup-repassword"
+                        placeholder="تکرار کلمه عبور"
+                        required="" />
+                        <p id="signup-error-message" class="d_none bg-light text-danger" >لطفا یک ایمیل معتبر وارد کنید (gmail.com، yahoo.com یا outlook.com).</p>                      
+                        <button type="submit" id="signup-button" class="modal-button">ثبت نام</button>
+                    </form>
+                  </div>
+                  <div class="login-modal">
+                    <form id="login-form">
+                      <label class="modal-lable" for="login-checkbox">ورود به حساب کاربری</label>
+                      <input class="modal-input"
+                        type="text"
+                        name="Email"
+                        id="loginEmail"
+                        placeholder="نام کاربری " />
+                      <input class="modal-input" id="login-password" type="password" name="Password" placeholder="کلمه عبور" />
+                      <p id="login-error-message" class="d_none bg-light text-danger" >لطفا یک ایمیل معتبر وارد کنید (gmail.com، yahoo.com یا outlook.com).</p> 
+                      <button class="modal-button">ورود به حساب کاربری</button>
+                    </form>
+                  </div>
+              </body>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- nav start -->
+    <nav class="nav navbar-expand ms-5 me-5 d-lg-flex d-md-none d-none">
+      <div class="col-lg-12 d-flex list-unstyled mt-4" id="nav-menu">
+        <li class="nav-item dropdown">
+          <a
+            id="down-icon"
+            class="nav-link fw-bolder nav-item-color text-black"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            دسته بندی محصولات
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="border-2 border-end mt-2">
+              <li>
+                <a class="dropdown-item justify-content-center" href="#"
+                  >موبایل</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="products-list.html"
+                  ><img
+                    src="PIC/samsung-logo-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >samsung</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/apple-black-logo-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >iphone</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/xiaomi-logo-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >xiaomi</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="border-2 border-end ms-2 mt-2">
+              <li>
+                <a class="dropdown-item justify-content-center" href="#"
+                  >دوربین</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/canon-seeklogo.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name">
+                    Canon</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/sony-seeklogo.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >Sony</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/cdnlogo.com_nikon.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >Nikon</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="ms-2 mt-2">
+              <li><a class="dropdown-item" href="#">لپ تاپ</a></li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/asus-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >asus</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/apple-black-logo-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >macbook</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="PIC/hp-svgrepo-com.svg"
+                    alt=""
+                    class="brand-logo" /><span class="fw-bolder m-5 brand-name"
+                    >hp</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active fw-bolder ms-5 nav-item-color"
+            aria-current="page"
+            href="index.html"
+            >صفحه اصلی</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bolder ms-5 nav-item-color" href="#contact-us"
+            >ارتباط با ما</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bolder ms-5 nav-item-color" href="#about-us"
+            >درباره ما</a
+          >
+        </li>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!-- slider desktop start -->
+    <div class="col-12 d-lg-block d-none" id="slider">
+      <img src="pic/samsung-slider.jpg" class="col-12 desktop-slider d-lg-block d-none" alt="" />
+      <img src="pic/xiaomi-desktop-slider.jpg" class="col-12 desktop-slider d-lg-block d-none" alt="" />
+      <img src="pic/apple-silder-desktop.jpg" class="col-12 desktop-slider d-lg-block d-none" alt="" />
+      <div class="slider-button-box">
+        <button class="slider-button-design" id="prev">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+        <button class="slider-button-design" id="next">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+      </div>
+    </div>
+    <!-- slider desktop end -->
+    <!-- slider mobile start -->
+    <div class="col-12 d-lg-none d-block" id="mobilslider">
+      <img src="pic/samsung-slider-mobile-tab.jpg" class="col-12 mobile-slider d-lg-none d-block" alt="" />
+      <img src="pic/xiaomi-slider-mobile.jpg" class="col-12 mobile-slider d-lg-none d-block" alt="" />
+      <img src="pic/apple-slider-mobile.jpg" class="col-12 mobile-slider d-lg-none d-block" alt="" />
+      <div class="slider-button-box d-none">
+        <button class="slider-button-design" id="prev-mobile">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+        <button class="slider-button-design" id="next-mobile">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+      </div>
+    </div>
+    <!-- slider mobile end -->
+    <!-- special offer cart start -->
+    <!-- <section class="container-lg d-lg-flex d-block bg-danger mt-4" id="special-offer-box">
+      <div class="d-lg-block d-flex">
+        <div class="">
+          <img src="pic/Amazing.svg" class="d-lg-none m-lg-auto  d-block" alt="" id="special-img-box" />
+        </div>
+        <div class="m-lg-auto mt-lg-5 mt-3 ms-2 ms-lg-0">
+          <img
+            src="pic/spesial-offer.svg"
+            alt=""
+            id="special-fa"
+            class="m-lg-auto d-lg-block d-none" />
+          <img src="pic/incredible-word.svg" class="d-block d-lg-none" alt="">
+        </div>
+        <div class="d-flex mt-lg-3 mt-2 ms-4 ms-lg-0">
+          <div class=" timer_box">
+            <p id="second" class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class="timer_box">
+            <p id="minute"  class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class=" timer_box">
+            <p id="hour"  class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <div class="d-flex mt-lg-3 ms-4 ms-lg-0">
+            <button class="special-box-button ms-3 d-lg-none d-block " id="prev-box-mobile"><i class="fa fa-arrow-alt-right"></i></button>
+            <button class="special-box-button d-lg-none d-block ms-2" id="next-box-mobile"><i class="fa fa-arrow-alt-left"></i></button>
+          </div>
+        </div>
+        <div class="mt-3">
+          <img src="pic/Amazing.svg" class="d-lg-block m-lg-auto  d-none" alt="" id="special-img-box" />
+        </div>
+      </div>
+      <button class="special-box-button ms-lg-2 d-lg-block d-none" id="prev-box-desktop"><i class="fa fa-arrow-alt-right"></i></button>
+      <div class="product-list mt-lg-3 ms-2 me-2">
+        <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer first-special-product">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit" class="span_toman"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer  ">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+          <div class="mt-1">
+            <p class="product-name text-black fw-light">
+              گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+              گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+            </p>
+            
+          </div>
+          </a>
+          <div class="d-flex justify-content-between">
+            <p class="offer mt-2 ms-1">25%</p>
+          <div class="me-2 text-center">
+            <div class="d-flex">
+              <p class="fw-bolder text-black m-auto">
+                50000000
+              </p>
+              <span class="span_toman"><img
+                class="toman-edit"
+                src="pic/toman.svg"
+                alt="" /></span>
+            </div>
+            <del class="fw-light ex-price m-auto">62,900,000</del>
+          </div>
+        </div>
+        <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+          افزودن به سبد خرید
+        </button>
+        </div>
+        <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer ">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+          <div
+            class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer last-special-product">
+            <a href="" class="text-decoration-none">
+              <img
+                class="col-lg-11 col-10 mt-2"
+                src="pic/samsung-galaxy-s24-ulta-black.png"
+                alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              
+            </div>
+            </a>
+            <div class="d-flex justify-content-between">
+              <p class="offer mt-2 ms-1">25%</p>
+            <div class="me-2 text-center">
+              <div class="d-flex">
+                <p class="fw-bolder text-black m-auto">
+                  50000000
+                </p>
+                <span class="span_toman"><img
+                  class="toman-edit"
+                  src="pic/toman.svg"
+                  alt="" /></span>
+              </div>
+              <del class="fw-light ex-price m-auto">62,900,000</del>
+            </div>
+          </div>
+          <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+            افزودن به سبد خرید
+          </button>
+          </div>
+        
+          
+        </div> 
+      <button class="special-box-button d-lg-block d-none ms-lg-2" id="next-box-desktop"><i class="fa fa-arrow-alt-left"></i></button>
+    </section> -->
+    
+    <!-- special offer cart end -->
+    <div class="container-lg bg-danger d-lg-flex mt-4" id="special-offer-box">
+      <div class="d-lg-block d-flex">
+        <div class="">
+          <img src="pic/Amazing.svg" class="d-lg-none m-lg-auto  d-block" alt="" id="special-img-box" />
+        </div>
+        <div class="m-lg-auto mt-lg-5 mt-3 ms-2 ms-lg-0">
+          <img
+            src="pic/spesial-offer.svg"
+            alt=""
+            id="special-fa"
+            class="m-lg-auto d-lg-block d-none" />
+          <img src="pic/incredible-word.svg" class="d-block d-lg-none" alt="">
+        </div>
+        <div class="d-flex mt-lg-3 mt-2 ms-4 ms-lg-0">
+          <div class=" timer_box">
+            <p id="second" class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class="timer_box">
+            <p id="minute"  class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class=" timer_box">
+            <p id="hour"  class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+        </div>
+        <div class="mt-3">
+          <img src="pic/Amazing.svg" class="d-lg-block m-lg-auto  d-none" alt="" id="special-img-box" />
+        </div>
+      </div>
+      <button class="special-box-button d-lg-block d-none ms-lg-2" id="prev-box-desktop"><i class="fa fa-arrow-alt-right"></i></button>
+      <div class="swiper" id="special-box-swiper">
+        <div class="swiper-wrapper mt-3 align-items-center">
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-4 mt-lg-4 ms-3 mb-5 d-flex flex-column special-offer first-special-product">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer last-special-product">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">50,000,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="special-box-button d-lg-block d-none ms-lg-2" id="next-box-desktop"><i class="fa fa-arrow-alt-left"></i></button>
+    </div>
+     <!-- new mob start -->
+    <div class="mt-4 new-prod">
+      <img class="d-none d-lg-block" src="pic/new-mob.jpg" alt="">
+      <img class="d-lg-none d-block col-12" src="pic/new-mob-mobile.jpg" alt="">
+    </div>
+    <div class="container-lg d-flex">
+      <div class="swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer first-special-product">
+              <a href="product.html" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62900000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer last-special-product">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="col-lg-11 col-10 mt-2"
+                  src="pic/samsung-galaxy-s24-ulta-black.png"
+                  alt="" />
+                <div class="mt-1">
+                  <p class="product-name text-black fw-light">
+                    گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت
+                    512 گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ-
+                    ویتنام
+                  </p>
+                </div>
+              </a>
+              <div class="d-flex justify-content-center">
+                <p></p>
+                <div class="me-2 text-center">
+                  <div class="d-flex">
+                    <p class="fw-bolder text-black m-auto">62,900,000</p>
+                    <span class="span_toman"
+                      ><img
+                        class="toman-edit"
+                        class="span_toman"
+                        src="pic/toman.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="addbas(this)"
+                class="btn btn-danger col-11 ms-2 mt-4 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- new laptop start -->
+      <div class="mt-4 new-prod">
+        <img class="d-none d-lg-block" src="pic/new-laptop-desktop.jpg" alt="">
+        <img class="d-lg-none d-block col-12" src="pic/new-laptop-mobile.jpg" alt="">
+      </div>
+      <div class="container-lg d-flex">
+        <div class="swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer first-special-product">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer last-special-product">
+                <a href="" class="text-decoration-none">
+                  <img
+                    class="col-lg-11 col-10 mt-2"
+                    src="pic/laptop-asus-rog-strix-scar-16-g634-front-659fe0b0fd49184092c450c0.png"
+                    alt="" />
+                  <div class="mt-1">
+                    <p class="product-name text-black fw-light">
+                      لپ تاپ ROG Strix SCAR 16 G634JYR ایسوس - Core i9-14900HX RTX 4090 32GB 1TB
+                    </p>
+                  </div>
+                </a>
+                <div class="d-flex justify-content-center">
+                  <p></p>
+                  <div class="me-2 text-center">
+                    <div class="d-flex">
+                      <p class="fw-bolder text-black m-auto">343,326,000</p>
+                      <span class="span_toman"
+                        ><img
+                          class="toman-edit"
+                          class="span_toman"
+                          src="pic/toman.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="addbas(this)"
+                  class="btn btn-danger col-11 ms-2 mt-4 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      <!-- new camera start -->
+        <div class="mt-4 new-prod">
+          <img class="d-none d-lg-block" src="pic/new-camera-desktop.jpg" alt="">
+          <img class="d-lg-none d-block col-12" src="pic/camera-new-mobile.jpg" alt="">
+        </div>
+        <div class="container-lg d-flex">
+          <div class="swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer first-special-product">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div> <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="bg-body-tertiary h-auto pb-3 mt-lg-4 ms-1 mb-5 d-flex flex-column special-offer last-special-offer">
+                  <a href="" class="text-decoration-none">
+                    <img
+                      class="col-lg-11 col-10 mt-2"
+                      src="pic/2022-12-camera-canon-eos-r6-mark-ii-652d04d2eb21a6b54f507f7b.jpeg"
+                      alt="" />
+                    <div class="mt-1">
+                      <p class="product-name text-black fw-light">
+                        دوربین کانن EOS R6 Mark II
+                      </p>
+                    </div>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <p></p>
+                    <div class="me-2 text-center">
+                      <div class="d-flex">
+                        <p class="fw-bolder text-black m-auto">209,000,000</p>
+                        <span class="span_toman"
+                          ><img
+                            class="toman-edit"
+                            class="span_toman"
+                            src="pic/toman.svg"
+                            alt=""
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onclick="addbas(this)"
+                    class="btn btn-danger col-11 ms-2 mt-4 add">
+                    افزودن به سبد خرید
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      <!-- <button class="special-box-button ms-lg-2 d-lg-block d-none" id="prev-mob-desktop"><i class="fa fa-arrow-alt-right"></i></button>
+      <div class="d-flex overflow-x-hidden mob-list">
+        <button class="special-box-button ms-lg-2 d-lg-none position-absolute d-block" id="prev-mob-mobile"><i class="fa fa-arrow-alt-right"></i></button>
+        <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 first-special-product">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit" class="span_toman"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+      class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3  ">
+      <a href="" class="text-decoration-none">
+        <img
+          class="col-lg-11 col-10 mt-2"
+          src="pic/samsung-galaxy-s24-ulta-black.png"
+          alt="" />
+      <div class="mt-1">
+        <p class="product-name text-black fw-light">
+          گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+          گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+        </p>
+        
+      </div>
+      </a>
+      <div class="d-flex">
+        <p></p>
+      <div class="m-auto text-center">
+        <div class="d-flex mb-2">
+          <p class="fw-bolder price text-black m-auto">
+            50000000
+          </p>
+          <span class="span_toman"><img
+            class="toman-edit"
+            src="pic/toman.svg"
+            alt="" /></span>
+        </div>
+        
+      </div>
+    </div>
+    <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+      افزودن به سبد خرید
+    </button>
+    </div>
+    <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex pb-3 flex-column new-mob ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 ">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <div
+        class="bg-body-tertiary col-lg-2 col-4 mt-lg-4 ms-2 mb-5 d-flex flex-column new-mob pb-3 last-special-product">
+        <a href="" class="text-decoration-none">
+          <img
+            class="col-lg-11 col-10 mt-2"
+            src="pic/samsung-galaxy-s24-ulta-black.png"
+            alt="" />
+        <div class="mt-1">
+          <p class="product-name text-black fw-light">
+            گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+            گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+          </p>
+          
+        </div>
+        </a>
+        <div class="d-flex">
+          <p></p>
+        <div class="m-auto text-center">
+          <div class="d-flex mb-2">
+            <p class="fw-bolder price text-black m-auto">
+              50000000
+            </p>
+            <span class="span_toman"><img
+              class="toman-edit"
+              src="pic/toman.svg"
+              alt="" /></span>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="addbas(this)" class="btn btn-danger col-11 ms-2 add">
+        افزودن به سبد خرید
+      </button>
+      </div>
+      <button class="special-box-button d-lg-none d-block position-absolute ms-lg-2" id="next-mob-mobile"><i class="fa fa-arrow-alt-left"></i></button>
+    </div>
+    <button class="special-box-button d-lg-block d-none ms-lg-2" id="next-mob-desktop"><i class="fa fa-arrow-alt-left"></i></button> -->
+  </div>
+  <div class="container-lg text-center justify-content-center mt-3 pt-3 pb-3" id="smart-news-part">
+     <div class="col-12"><h2 class="join-news-text fw-bolder mt-2">مجله اسمارت تک</h2></div>
+     <div id="news-part-body" class="m-auto position-relative">
+       <div id="news-page-1" class="d-flex justify-content-around col-12 news-content-box position-absolute show">
+         <div class="col-lg-3 col-4 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/redmagic-10-pro-plus-back-panel4-6734e847f9616c86fb4826b4.webp" alt=""></div>
+            <div class="co-lgl-10 col-11 m-auto mt-2 news-text-box"><p>ردمجیک ۱۰ و ۱۰ پرو رونمایی شد؛ پرچمداران گیمینگ با اسنپدراگون ۸ الیت، نمایشگر ۱۴۴هرتزی و باتری غول‌آسا</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/samsung-logo-outdoor-hq-green-6450a5459425b35d8c811b95.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>ارزش سهام سامسونگ به کمترین حد در ۴ سال اخیر رسید</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/poco-x6-pro-lifestyle-65cd2741ad00028634ae938d.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>این گوشی‌های شیائومی و پوکو آپدیت HyperOS 2.0 را دریافت می‌کنند؛ به‌همراه تاریخ حدودی انتشار</p></div>
+          </a>
+         </div>
+       </div>
+       <div id="news-page-2" class="d-flex justify-content-around col-12 news-content-box position-absolute hide">
+         <div class="col-lg-3 col-4 news-content">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/galaxy-a35-front-6628a5a0a55162c757fc73ef.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>مشخصات دوربین گلکسی A36، گوشی مورد انتظار بسیاری از ایرانی‌ها، لو رفت</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/lg-rollable-1-67092a84f72bf31577f0f619.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>ظاهرا عزم ال‌جی برای بازگشت به بازار موبایل جدی است</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box col-12 m-auto"><img src="pic/2021-3-xbox-lead-phil-spencer-presenting-conference-black-t-shirt-638c67108615ae71282af01c.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>مایکروسافت همچنان به‌دنبال خریدهای جدید در حوزه گیمینگ است؛ فیل اسپنسر تأیید کرد</p></div>
+          </a>
+         </div>
+       </div>
+       <div id="news-page-3" class="d-flex justify-content-around col-12 news-content-box position-absolute hide">
+         <div class="col-lg-3 col-4 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/huawei-tri-fold-phone-66b48e40656303741e061076.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>پتنت سامسونگ، تصویر شماتیکی از گوشی تاشدنی سه‌تکه کره‌ای‌ها را نشان می‌دهد</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/2022-6-iphone-se-2022-closeup-camera-638bb7c9da37f663eb458399.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>آیفون SE 4، گوشی اقتصادی اپل، احتمالاً اوایل ۲۰۲۵ عرضه می‌شود</p></div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-4 ms-2 news-content ">
+          <a href="" class="text-black text-decoration-none">
+            <div class="news-image-box  col-12 m-auto"><img src="pic/one-ui-7-design-67335ab97a5530633c0719cc.webp" alt=""></div>
+            <div class="col-lg-10 col-11 m-auto mt-2 news-text-box"><p>آیکون‌های One UI 7 سامسونگ به‌نمایش درآمدند</p></div>
+          </a>
+         </div>
+       </div>
+     </div>
+     <div id="join-news" class="d-flex flex-wrap justify-content-around m-auto mt-3 mb-5">
+       <div class="col-lg-7 col-12 align-items-start">
+         <h5 class="join-news-text">برای عضویت در بخش خبرنامه اسمارت تک ما را در شبکه های اجتماعی دنبال کنید.</h5>
+       </div>
+       <div class="d-flex">
+         <li class="list-inline-item">
+           <a href="#" class="btn-sm  social-media-news ">
+             <i class="fa-brands fa-facebook"></i>
+           </a>
+         </li>
+         <li class="list-inline-item">
+           <a href="#" class="btn-sm  social-media-news ">
+             <i class="fa-brands fa-instagram"></i>
+           </a>
+         </li><li class="list-inline-item">
+           <a href="#" class="btn-sm  social-media-news ">
+             <i class="fa-brands fa-telegram"></i>
+           </a>
+         </li>
+         <li class="list-inline-item">
+           <a href="#" class="btn-sm  social-media-news ">
+             <i class="fa-brands fa-whatsapp"></i>
+           </a>
+         </li>
+         <li class="list-inline-item">
+           <a href="#" class="btn-sm  social-media-news">
+             <i class="fa-brands fa-linkedin"></i>
+           </a>
+         </li>
+       </div>
+     </div>
+     <div class="d-flex justify-content-center mt-lg-3 mt-5">
+       <i class="fa-solid fa-dot-circle ms-lg-5 ms-4 dot-news" id="news-page1"></i>
+       <i class="fa-solid fa-dot-circle ms-lg-5 ms-4 dot-news" id="news-page2"></i>
+       <i class="fa-solid fa-dot-circle ms-lg-5 ms-4 dot-news" id="news-page3"></i>
+     </div>
+  </div>
+  <div class="container mt-5 d-flex text-center justify-content-center">
+    <hr class="text-black fw-bolder bg-black col-3"><p class="fw-bolder ms-2 me-2">برند های موجود در اسمارت شاپ</p><hr class="text-black fw-bolder bg-black col-3">
+  </div>
+  <!-- new mob end -->
+  <!-- smart shop news start -->
+     <!-- brand-slider start -->
+     <div class="logos container-lg mt-3">
+      <div class="logos-slide">
+        <a href=""> 
+          <img src="pic/asus-svgrepo-com.svg" alt="" />
+        </a>
+        <a href="">
+          <img
+          src="pic/apple-black-logo-svgrepo-com.svg"
+          alt="" />
+        </a>
+        <a href="">
+          <img
+          src="pic/samsung-logo-svgrepo-com.svg"
+          alt="" />
+        </a>
+        <a href="">
+          <img src="pic/hp-svgrepo-com.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="pic/canon-seeklogo.svg" alt="" />
+        </a>
+        <a href="">
+          <img
+          src="pic/xiaomi-logo-svgrepo-com.svg"
+          alt="" />
+        </a>
+        <a href="">
+          <img src="pic/cdnlogo.com_nikon.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="pic/sony-seeklogo.svg" alt="" />
+        </a>
+       
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="logos-slide">
+        <img src="pic/asus-svgrepo-com.svg" alt="" />
+        <img
+          src="pic/apple-black-logo-svgrepo-com.svg"
+          alt="" />
+        <img
+          src="pic/samsung-logo-svgrepo-com.svg"
+          alt="" />
+        <img src="pic/hp-svgrepo-com.svg" alt="" />
+        <img src="pic/canon-seeklogo.svg" alt="" />
+        <img
+          src="pic/xiaomi-logo-svgrepo-com.svg"
+          alt="" />
+        <img src="pic/cdnlogo.com_nikon.svg" alt="" />
+        <img src="pic/sony-seeklogo.svg" alt="" />
+      </div>
+     </div>
+     <!-- brand-slider end -->
+     <!-- footer start -->
+    <footer class="text-black bg-body-secondary mt-5 border border-top pt-5">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start ">
+          <div class="col-12 justify-content-around mb-3 d-flex flex-wrap">
+            <div class="text-center mb-3" >
+              <div><img src="pic/support.svg" alt=""></div>
+              <div><p>پشتیبانی 24 ساعته</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/original-products.svg" alt=""></div>
+              <div><p>ضمانت اصالت کالا</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/express-delivery.svg" alt=""></div>
+              <div><p>امکان تحویل سریع</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/days-return.svg" alt=""></div>
+              <div><p>هفت روز ضمانت بازگشت کالا</p></div>
+            </div>
+            <div class="text-center ms-lg-5 mb-3" >
+              <div><img src="pic/cash-on-delivery.svg" alt=""></div>
+              <div><p>پرداخت در محل</p></div>
+            </div>
+          </div>
+          <hr>
+          <div class="col-md-3 col-lg-3 mx-auto mt-2 ">
+            <img src="pic/new-logo.png" class="mb-4 " id="about-us"></img>
+            <p class="fw-bolder"> انلاین شاپ تخصصی موبایل و لپ تاپ با مجموعه گسترده‌ای از برندهای معتبر. تجربه خرید ساده و راحت، پشتیبانی حرفه‌ای و خدمات پس از فروش قوی. اطمینان کامل از خرید آنلاین.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 mx-auto mt-3 ">
+            <h5 class="fw-bolder text-danger mb-4 ">خدمات مشتریان</h5>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">سوالات متداول</a></p>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">اخبار و مقالات</a></p>
+            <p><a class="text-decoration-none text-black fw-bolder" href="#">قوانین و مقررات</a></p>
+          </div>
+          <div class="col-md-3 col-lg-2 mx-auto mt-3">
+            <h5 class="fw-bolder text-danger mb-4  ">میانبر های سایت</h5>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="index.html">صفحه اصلی</a></p>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="samsung-mobile.html">موبایل</a></p>
+              <p><a class="text-decoration-none text-black  fw-bolder" href="#">لپ تاپ</a></p>
+          </div>
+          <div class="col-md-3 col-lg-3 mx-auto mt-3 " id="contact-us">
+            <h5 class="fw-bolder text-danger mb-4  ">ارتباط با ما</h5>
+              <p>
+                <i class="fa-solid fa-house footer_icon"></i><span class="ms-2 text-nowrap">تهران ,خیابان پیروزی,پاساژ پاناروما</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope me-2  footer_icon"></i>
+                <span>Mdderfan@gmail.com</span>
+              </p>
+              <p class="fw-bolder">
+                <i class="fa-solid fa-phone me-3 footer_icon"></i>
+                989050217601+
+              </p>
+              <p class="fw-bolder">
+                <i class="fa-solid fa-print me-3  footer_icon"></i>
+                983365901009+
+              </p>
+          </div>
+        </div>
+        <hr class="mb-5 ">
+        <div class="row align-items-center footer-cp" >
+          <div class="col-md-7 col-lg-8 ">
+            <p class="fw-bolder">
+              Copyright ©2024 All Rights Reserved by:
+            <a href="#" class="text-decoration-none ">
+              <strong class="text-danger ">ErfanMd</strong>
+            </a></p>
+          </div>
+          <div class="col-md-5 col-lg-4 footer-cp ">
+            <div class="text-center text-md-start ">
+              <ul class="list-unstyled list-inline ">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-sm  social-media">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="web-3-project.js"></script>
+    <script>
+      // move top 
+      document.querySelectorAll(".movetop")[0].addEventListener("click", mtop);
+      function move(){
+        if (window.pageYOffset >= 100) {
+        document.querySelectorAll(".movetop")[0].classList.remove("hide");
+          document.querySelectorAll(".movetop")[0].classList.add("show");
+        } else {
+          document.querySelectorAll(".movetop")[0].classList.remove("show");
+          document.querySelectorAll(".movetop")[0].classList.add("hide");
+        }
+      }
+        function mtop() {
+        window.scrollTo(0, 0);
+      }
+      
+      // slider start
+      let desktop_sliders = document.getElementById('slider').querySelectorAll(".desktop-slider");
+      let mobile_sliders = document.getElementById('mobilslider').querySelectorAll(".mobile-slider");
+      let n = 0
+      document.querySelector('#next').addEventListener('click',nextimg)
+      function nextimg() {
+          if(n >= desktop_sliders.length-1) n=0
+          else n++
+          for(let i = 0; i < desktop_sliders.length; i++){
+              if(n == i){
+                  desktop_sliders[i].classList.remove('hide')
+                  desktop_sliders[n].classList.add('show')
+              }
+              else{
+                  desktop_sliders[i].classList.remove('show')
+                  desktop_sliders[i].classList.add('hide')
+              }
+          }
+      }
+      document.querySelector('#next-mobile').addEventListener('click',nextimg_mob)
+      function nextimg_mob() {
+          if(n >= mobile_sliders.length-1) n=0
+          else n++
+          for(let i = 0; i < mobile_sliders.length; i++){
+              if(n == i){
+                  mobile_sliders[i].classList.remove('hide')
+                  mobile_sliders[n].classList.add('show')
+              }
+              else{
+                  mobile_sliders[i].classList.remove('show')
+                  mobile_sliders[i].classList.add('hide')
+              }
+          }
+      }
+      document.querySelector('#prev').addEventListener('click',previmg)
+      function previmg() {
+          if(n<=0) n=desktop_sliders.length-1
+          else n--
+          for(let i = 0; i<desktop_sliders.length;i++){
+              if(n==i){
+                  desktop_sliders[i].classList.remove('hide')
+                  desktop_sliders[n].classList.add("show")
+              }
+              else{
+                  desktop_sliders[i].classList.remove('show')
+                  desktop_sliders[i].classList.add('hide')
+              }
+          }
+      }
+      document.querySelector('#prev-mobile').addEventListener('click',previmg_mob)
+      function previmg_mob() {
+          if(n<=0) n=mobile_sliders.length-1
+          else n--
+          for(let i = 0; i<mobile_sliders.length;i++){
+              if(n==i){
+                  mobile_sliders[i].classList.remove('hide')
+                  mobile_sliders[n].classList.add("show")
+              }
+              else{
+                  mobile_sliders[i].classList.remove('show')
+                  mobile_sliders[i].classList.add('hide')
+              }
+          }
+      }
+      setInterval(nextimg,10000)
+      setInterval(nextimg_mob,10000)
+      // slider end
+      // timer 
+      let second = 60
+      let minute = 0
+      let hour = 48
+      setInterval(function(){
+          second--
+          if(second === 0){
+              minute--
+              second = 59
+          }
+          if(minute === 0){
+              hour--
+              minute = 59
+          }
+          document.querySelector("#second").innerHTML = second
+          document.querySelector("#minute").innerHTML = minute 
+          document.querySelector("#hour").innerHTML = hour
+      },1000)
+      // const productList = document.querySelector(".product-list");
+      // const scrollLeftButton = document.querySelector("#prev-box-desktop");
+      // const scrollRightButton = document.querySelector("#next-box-desktop");
+      // const scrollLeft = document.querySelector("#prev-box-mobile");
+      // const scrollRight = document.querySelector("#next-box-mobile");
+      // scrollLeftButton.addEventListener("click", () => {
+      //   productList.scrollBy({
+      //     top: 0,
+      //     left: 177, // میزان اسکرول به چپ
+      //     behavior: "smooth",
+      //   });
+      // });
+      
+      // scrollRightButton.addEventListener("click", () => {
+      //   productList.scrollBy({
+      //     top: 0,
+      //     left: -177, // میزان اسکرول به راست
+      //     behavior: "smooth",
+      //   });
+      // });
+      // scrollLeft.addEventListener("click", () => {
+      //     productList.scrollBy({
+      //       top: 0,
+      //       left: 177, // میزان اسکرول به چپ
+      //       behavior: "smooth",
+      //     });
+      //   });
+        
+      //   scrollRight.addEventListener("click", () => {
+      //     productList.scrollBy({
+      //       top: 0,
+      //       left: -177, // میزان اسکرول به راست
+      //       behavior: "smooth",
+      //     });
+      //   });
+        // const mobList = document.querySelector(".mob-list");
+        // const scrollLeftButtonMob = document.querySelector("#prev-mob-desktop");
+        // const scrollRightButtonMob = document.querySelector("#next-mob-desktop");
+        // const scrollLeftMob = document.querySelector("#prev-mob-mobile");
+        // const scrollRightMob = document.querySelector("#next-mob-mobile");
+        // scrollLeftButtonMob.addEventListener("click", () => {
+        //   mobList.scrollBy({
+        //     top: 0,
+        //     left: 177, // میزان اسکرول به چپ
+        //     behavior: "smooth",
+        //   });
+        // });
+        
+        // scrollRightButtonMob.addEventListener("click", () => {
+        //   mobList.scrollBy({
+        //     top: 0,
+        //     left: -177, // میزان اسکرول به راست
+        //     behavior: "smooth",
+        //   });
+        // });
+        // scrollLeftMob.addEventListener("click", () => {
+        //     mobList.scrollBy({
+        //       top: 0,
+        //       left: 177, // میزان اسکرول به چپ
+        //       behavior: "smooth",
+        //     });
+        //   });
+          
+        //   scrollRightMob.addEventListener("click", () => {
+        //     mobList.scrollBy({
+        //       top: 0,
+        //       left: -177, // میزان اسکرول به راست
+        //       behavior: "smooth",
+        //     });
+        //   });
+      let add_products = new Array()
+      let totalprice = 0
+      function addbas(t)
+      {
+          let nfObject = new Intl.NumberFormat('en-US');
+          let images = t.parentNode.children[0].children[0]
+          let start = images.src.search("pic")
+          let images_address = images.src.slice(start, images.length);
+          let price = t.parentNode.children[1].children[1].children[0].children[0].innerHTML.replaceAll(",","")
+          let name = t.parentNode.children[0].children[1].children[0].innerHTML
+          let obj = { name: name, price: price, image: images , image_addres :images_address };
+          add_products.push(obj)
+          let bought_products =document.createElement("div")
+          bought_products.classList.add("bought-products")
+          document.querySelector("#body").appendChild(bought_products)
+          let bought_products_image_box = document.createElement("div")
+          bought_products_image_box.classList.add("bought-products-image-box")
+          bought_products.appendChild(bought_products_image_box)
+          let bought_products_image = document.createElement("img")
+          bought_products_image.setAttribute("id","bought-products-image")
+          bought_products_image_box.appendChild(bought_products_image)
+          let mahsol_counter_box = document.createElement("div")
+          mahsol_counter_box.classList.add("mahsol_counter_box")
+          bought_products_image_box.appendChild(mahsol_counter_box)
+          let mahsol_minus_counter =  document.createElement("button")
+          mahsol_minus_counter.classList.add("mahsol_trash_counter_button")
+          let trash_icon = document.createElement("i")
+          trash_icon.classList.add("fa-regular")
+          trash_icon.classList.add("fa-trash")
+          mahsol_minus_counter.appendChild(trash_icon)
+          mahsol_counter_box.appendChild(mahsol_minus_counter)
+          let bought_products_counter = document.createElement("p")
+          bought_products_counter.innerHTML = "1"
+          bought_products_counter.classList.add("bought_products_counter")
+          mahsol_counter_box.appendChild(bought_products_counter)
+          let mahsol_plus_counter =  document.createElement("button")
+          mahsol_plus_counter.innerHTML = "+"
+          mahsol_plus_counter.classList.add("mahsol_plus_counter_button")
+          mahsol_counter_box.appendChild(mahsol_plus_counter)
+          let bought_products_detail =document.createElement("div")
+          bought_products_detail.classList.add("bought-products-detail")
+          bought_products.appendChild(bought_products_detail)
+          let bought_products_name_box = document.createElement("div")
+          bought_products_name_box.classList.add("bought-products-name-box")
+          bought_products_detail.appendChild(bought_products_name_box)
+          let bought_products_name = document.createElement("p")
+          bought_products_name.setAttribute("id","bought-products-name")
+          bought_products_name_box.appendChild(bought_products_name)
+          let bought_products_price_box = document.createElement("div")
+          bought_products_price_box.classList.add("bought-products-price-box")
+          bought_products_detail.appendChild(bought_products_price_box)
+          let bought_products_price = document.createElement("p")
+          bought_products_price.setAttribute("id","bought-products-price")
+          bought_products_price_box.appendChild(bought_products_price)
+          let toman_span = document.createElement("span")
+          let toman_image = document.createElement("img")
+          toman_image.classList.add("toman-edit")
+          toman_image.src = "pic/toman.svg"
+          toman_span.appendChild(toman_image)
+          toman_span.classList.add("span_toman")
+          bought_products_price_box.appendChild(toman_span)
+          bought_products_image.src = images_address
+          bought_products_name.innerHTML = name
+          bought_products_price.innerHTML = nfObject.format(price)
+          let total_price = document.querySelector("#total_price")
+          
+          // console.log(typeof(parseInt(bought_products_counter)))
+          totalprice = totalprice + parseInt(price)*parseInt(bought_products_counter.innerHTML)
+          total_price.innerHTML = nfObject.format(totalprice)
+          mahsol_plus_counter.addEventListener("click",function(){
+              bought_products_counter.innerHTML = parseInt(bought_products_counter.innerHTML) + 1
+              document.querySelector("#tedad").innerHTML = parseInt(document.querySelector("#tedad").innerHTML)+1
+              document.querySelector("#bought-products-counter").innerHTML = parseInt(document.querySelector("#bought-products-counter").innerHTML)+1
+              totalprice = totalprice + parseInt(price)
+              total_price.innerHTML = nfObject.format(totalprice)
+              mahsol_plus_counter.innerHTML = "+"
+              if(parseInt(bought_products_counter.innerHTML) > 1){
+                  //  mahsol_minus_counter.remove(trash_icon)
+                   mahsol_minus_counter.innerHTML = "-"
+                   mahsol_minus_counter.classList.remove("mahsol_trash_counter_button")
+                   mahsol_minus_counter.classList.add("mahsol_minus_counter_button")
+                  }
+          })
+          mahsol_minus_counter.addEventListener("click",function(){
+              bought_products_counter.innerHTML = parseInt(bought_products_counter.innerHTML) - 1
+              document.querySelector("#tedad").innerHTML = parseInt(document.querySelector("#tedad").innerHTML)-1
+              document.querySelector("#bought-products-counter").innerHTML = parseInt(document.querySelector("#bought-products-counter").innerHTML)-1
+              totalprice = totalprice - parseInt(price)
+              total_price.innerHTML = nfObject.format(totalprice)
+              if(parseInt(bought_products_counter.innerHTML) == 1){
+                  mahsol_minus_counter.innerHTML = ""
+                  mahsol_minus_counter.classList.remove("mahsol_minus_counter_button")
+                  mahsol_minus_counter.classList.add("mahsol_trash_counter_button")
+                  mahsol_minus_counter.appendChild(trash_icon)
+                  
+              }
+              if(parseInt(bought_products_counter.innerHTML) == 0){
+                bought_products.remove()
+                if(parseInt(document.querySelector("#bought-products-counter").innerHTML)==0){
+                    document.querySelector("#bought-products-counter-box").classList.remove("d_show")
+                    document.querySelector("#bought-products-counter-box").classList.add("d_none")            }
+                 }
+           })
+          document.querySelector("#tedad").innerHTML = parseInt(document.querySelector("#tedad").innerHTML)+1
+          document.querySelector("#bought-products-counter-box").classList.remove("d_none")
+          document.querySelector("#bought-products-counter-box").classList.add("d_show")
+          document.querySelector("#bought-products-counter").innerHTML = parseInt(document.querySelector("#bought-products-counter").innerHTML)+1
+      }
+      function show_sabad_kharid(){
+          document.querySelector("#sabad-kharib-box").classList.remove("d_none")
+          document.querySelector("#sabad-kharib-box").classList.add("d_block")
+      }
+      function close_sabad_kharid(){
+          document.querySelector("#sabad-kharib-box").classList.remove("d_block")
+          document.querySelector("#sabad-kharib-box").classList.add("d_none")
+      }
+      document.getElementById('signupForm').addEventListener('submit', function(event)
+      { event.preventDefault(); 
+        const emailInput = document.getElementById('signupEmail'); 
+        const passwordInput = document.getElementById('signuppassword'); 
+        const confirmPasswordInput = document.getElementById('signup-repassword'); 
+        const errorMessage = document.getElementById('signup-error-message'); 
+        // const welcomeMessage = document.getElementById('welcome-message'); 
+        const emailPattern = /^([\w.%+-]+)@(gmail|yahoo|outlook)\.com$/; 
+        if (!emailPattern.test(emailInput.value) || passwordInput.value !== confirmPasswordInput.value || passwordInput.value.length < 4 || confirmPasswordInput.value.length < 4) {
+           errorMessage.classList.remove('d_none');
+           errorMessage.classList.add('d_block');
+          } 
+        else { 
+          errorMessage.classList.remove('d_block');
+          errorMessage.classList.add('d_none');
+          document.querySelector("#login-desktop-icon").remove();
+          document.querySelector("#login-desktop-span").remove();
+          let username = document.createElement("p")
+          username.classList.add("mt-2")
+          username.classList.add("ms-2")
+          username.classList.add("me-2")
+          document.querySelector("#login").appendChild(username)
+          username.innerHTML = document.querySelector("#user-name").value
+        } });
+        document.getElementById('login-form').addEventListener('submit', function(event)
+      { event.preventDefault(); 
+        const emailInput = document.getElementById('loginEmail'); 
+        const passwordInput = document.getElementById('login-password'); 
+        const errorMessage = document.getElementById('login-error-message');
+        const emailPattern = /^([\w.%+-]+)@(gmail|yahoo|outlook)\.com$/; 
+        if (!emailPattern.test(emailInput.value) || passwordInput.value !== "Erfan1998") {
+           errorMessage.classList.remove('d_none');
+           errorMessage.classList.add('d_block');
+          } 
+        else { 
+          errorMessage.classList.remove('d_block');
+          errorMessage.classList.add('d_none');
+          document.querySelector("#login-desktop-icon").remove();
+          document.querySelector("#login-desktop-span").remove();
+          let username = document.createElement("p")
+          username.classList.add("mt-2")
+          username.classList.add("ms-2")
+          username.classList.add("me-2")
+          document.querySelector("#login").appendChild(username)
+          username.innerHTML = emailInput.value
+        } });
+        document.querySelector("#news-page1").addEventListener("click", function(){
+          document.querySelector("#news-page-1").classList.add("show");
+          document.querySelector("#news-page-2").classList.remove("show");
+          document.querySelector("#news-page-3").classList.remove("show");
+          document.querySelector("#news-page-2").classList.add("hide");
+          document.querySelector("#news-page-3").classList.add("hide");
+
+        })
+        document.querySelector("#news-page2").addEventListener("click", function(){
+          document.querySelector("#news-page-2").classList.remove("hide")
+          document.querySelector("#news-page-2").classList.add("show");
+          document.querySelector("#news-page-1").classList.remove("show");
+          document.querySelector("#news-page-3").classList.remove("show");
+          document.querySelector("#news-page-1").classList.add("hide");
+          document.querySelector("#news-page-3").classList.add("hide");
+
+        })
+        document.querySelector("#news-page3").addEventListener("click", function(){
+          document.querySelector("#news-page-3").classList.remove("hide")
+          document.querySelector("#news-page-3").classList.add("show");
+          document.querySelector("#news-page-1").classList.remove("show");
+          document.querySelector("#news-page-2").classList.remove("show");
+          document.querySelector("#news-page-1").classList.add("hide");
+          document.querySelector("#news-page-2").classList.add("hide");
+
+        })
+    </script>
+  </body>
+</html>

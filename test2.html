@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-pro-6.5.0-web/css/all.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section
+      class="container-lg d-lg-flex d-block bg-danger mt-4"
+      id="special-offer-box">
+      <div class="d-lg-block d-flex">
+        <div class="">
+          <img
+            src="pic/Amazing.svg"
+            class="d-lg-none m-lg-auto d-block"
+            alt=""
+            id="special-img-box" />
+        </div>
+        <div class="m-lg-auto mt-lg-3 mt-3 ms-2 ms-lg-0">
+          <img
+            src="pic/spesial-offer.svg"
+            alt=""
+            id="special-fa"
+            class="m-lg-auto d-lg-block d-none" />
+          <img src="pic/incredible-word.svg" class="d-block d-lg-none" alt="" />
+        </div>
+        <div class="d-flex mt-lg-3 mt-2 ms-4 ms-lg-0">
+          <div class="timer_box">
+            <p id="second" class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class="timer_box">
+            <p id="minute" class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <span class="text-white m-1">:</span>
+          <div class="timer_box">
+            <p id="hour" class="p-lg-2 mt-1 ms-2 mt-lg-0 ms-lg-0"></p>
+          </div>
+          <div class="d-flex mt-lg-3 ms-4 ms-lg-0">
+            <button
+              class="special-box-button ms-3 d-lg-none d-block"
+              id="prev-box-mobile">
+              <i class="fa fa-arrow-alt-right"></i>
+            </button>
+            <button
+              class="special-box-button d-lg-none d-block ms-2"
+              id="next-box-mobile">
+              <i class="fa fa-arrow-alt-left"></i>
+            </button>
+          </div>
+        </div>
+        <div class="mt-3">
+          <img
+            src="pic/Amazing.svg"
+            class="d-lg-block m-lg-auto d-none"
+            alt=""
+            id="special-img-box" />
+        </div>
+      </div>
+      <button
+        class="special-box-button ms-lg-2 d-lg-block d-none"
+        id="prev-box-desktop">
+        <i class="fa fa-arrow-alt-right"></i>
+      </button>
+      <div class="product-list ms-2 me-2">
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer first-special-product">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button onclick="addbas(this)" class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m-auto price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+              </div>
+              <button class="btn btn-danger col-12 add">
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="bg-body-tertiary col-lg-2 col-4 mt-4 ms-lg-1 mb-5 d-flex flex-column special-offer last-special-product">
+          <a href="" class="text-decoration-none">
+            <img
+              class="col-lg-11 col-10 mt-2"
+              src="pic/samsung-galaxy-s24-ulta-black.png"
+              alt="" />
+            <div class="mt-1">
+              <p class="product-name text-black fw-light">
+                گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512
+                گیگابایت و رم 12 گیگابایت به همراه شارژر 45وات سامسونگ- ویتنام
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="offer mt-2 ms-1">25%</p>
+                <div class="me-2 text-center">
+                  <p class="fw-bolder text-black m- price">
+                    50,000,000<img
+                      class="toman-edit"
+                      src="pic/toman.svg"
+                      alt="" />
+                  </p>
+                  <del class="fw-light ex-price m-auto">62,900,000</del>
+                </div>
+                <button class="btn btn-danger col-12 add">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button
+        class="special-box-button d-lg-block d-none ms-lg-2"
+        id="next-box-desktop">
+        <i class="fa fa-arrow-alt-left"></i>
+      </button>
+    </section>
+    <script src="web-3-project.js"></script>
+  </body>
+</html>

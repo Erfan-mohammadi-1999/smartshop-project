@@ -1,0 +1,38 @@
+#ts {
+  width: 450px;
+  height: 800px;
+  background-color: aqua;
+}
+.show-product-image-p-page {
+  opacity: 1;
+  width: 100%;
+  height: 450px;
+}
+.show-product-image-p-page img {
+  width: 100%;
+  height: 100%;
+}
+#img-show {
+  transition: opacity 700ms; /* add transition to opacity */
+}
+#img-show.fade-out {
+  opacity: 0;
+}
+#img-show.fade-in {
+  opacity: 1;
+}
+.div-images {
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
+.div {
+  width: 25%;
+  height: 250px;
+  justify-content: space-between;
+  margin: auto;
+}
+.images {
+  width: 100%;
+  height: 100%;
+}

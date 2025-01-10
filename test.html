@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ts">
+      <div class="show">
+        <img src="pic/2023-8-xiaomi-mix-fold-3-gold.jpg" id="img-show" alt="" />
+      </div>
+      <div class="div-images">
+        <div class="div">
+          <img
+            src="pic/2021-10-macbook-pro-2021-14-16-inch.jpg"
+            alt=""
+            class="images" />
+        </div>
+        <div class="div">
+          <img
+            src="pic/2019-12-Apple MacBook Pro 16 2019-back-view.jpg"
+            alt=""
+            class="images" />
+        </div>
+        <div class="div">
+          <img src="pic/2022-12-xiaomi-13-pro-.jpg" alt="" class="images" />
+        </div>
+      </div>
+    </div>
+    <script>
+      let images = document.querySelectorAll(".images");
+      for (let i = 0; i < images.length; i++) {
+        document
+          .querySelectorAll(".images")
+          [i].addEventListener("click", function () {
+            console.log("hi");
+            console.log(images[i].src);
+            document
+              .querySelector("#img-show")
+              .classList.remove("fade-in"); /* remove fade-in class */
+            document
+              .querySelector("#img-show")
+              .classList.add("fade-out"); /* add fade-out class */
+            setTimeout(function () {
+              document.querySelector("#img-show").src = images[i].src;
+              document.querySelector("#img-show").classList.remove("fade-out");
+              document
+                .querySelector("#img-show")
+                .classList.add("fade-in"); /* add fade-in class */
+            }, 700); /* wait for 2 seconds */
+          });
+      }
+    </script>
+  </body>
+</html>
